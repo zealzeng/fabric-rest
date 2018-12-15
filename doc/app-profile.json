@@ -1,0 +1,50 @@
+{
+  "ca": [
+    {
+      "name": "ca.example.com",
+      "location": "http://192.168.31.168:7054",
+      "admin": "admin",
+      "password": "adminpw"
+    }
+  ],
+  "users": [
+    {
+      "name": "user001",
+      "orgName": "org1",
+      "affiliation":"org1.deparment001"
+    }
+  ],
+  "orderers": [
+    {
+      "name": "orderer.example.com",
+      "location": "grpc://192.168.31.168:7050"
+    }
+  ],
+  "peers": [
+    {
+      "name": "peer0.org1.example.com",
+      "orgName": "org1",
+      "location": "grpc://192.168.31.168:7051",
+      "eventHub": "grpc://192.168.31.168:7053"
+    }
+  ],
+  "orgs": [
+    {
+      "orgName": "org1",
+      "orgMspId": "Org1MSP",
+      "orgDomainName": "org1.example.com",
+      "caName": "ca.example.com"
+    }
+  ],
+  "channels": [
+    {
+      "name": "mychannel",
+      "peers": [
+        "peer0.org1.example.com"
+      ],
+      "orderers": [
+        "orderer.example.com"
+      ]
+    }
+  ]
+}
