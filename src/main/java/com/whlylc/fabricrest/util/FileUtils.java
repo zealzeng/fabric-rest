@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.luoying.fabricrest.util;
+package com.whlylc.fabricrest.util;
 
 import java.io.File;
 import java.io.FileOutputStream;

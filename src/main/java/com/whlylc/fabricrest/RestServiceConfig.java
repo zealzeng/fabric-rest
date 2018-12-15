@@ -1,11 +1,8 @@
-package com.luoying.fabricrest;
+package com.whlylc.fabricrest;
 
-import com.luoying.fabricrest.vo.FabricError;
+import com.whlylc.fabricrest.vo.FabricError;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.*;
 
 /**
  * Fabric rest service configuration
