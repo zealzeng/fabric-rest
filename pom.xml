@@ -9,6 +9,34 @@
     <name>Luoying fabric rest server</name>
     <description>Luoying fabric rest server</description>
 
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Zeal Zeng</name>
+            <organization>Wuhan Luoying</organization>
+            <url>https://github.com/zealzeng/fabric-rest</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/zealzeng/fabric-rest</connection>
+        <developerConnection>scm:git:git://github.com/zealzeng/fabric-rest</developerConnection>
+        <url>https://github.com/zealzeng/fabric-rest</url>
+    </scm>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <log4j2.version>2.11.0</log4j2.version>
@@ -58,6 +86,20 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
@@ -65,24 +107,24 @@
     <dependencies>
         <dependency>
             <groupId>com.whlylc</groupId>
-            <artifactId>server</artifactId>
+            <artifactId>luoying-server</artifactId>
             <version>0.1.0</version>
         </dependency>
         <dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>fastjson</artifactId>
-			<version>1.2.47</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-			<version>3.7</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.6</version>
-		</dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.47</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.7</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
+        </dependency>
 
         <dependency>
             <groupId>org.hyperledger.fabric-sdk-java</groupId>
@@ -91,9 +133,9 @@
         </dependency>
 
         <!--<dependency>-->
-            <!--<groupId>com.google.protobuf</groupId>-->
-            <!--<artifactId>protobuf-java</artifactId>-->
-            <!--<version>3.5.1</version>-->
+        <!--<groupId>com.google.protobuf</groupId>-->
+        <!--<artifactId>protobuf-java</artifactId>-->
+        <!--<version>3.5.1</version>-->
         <!--</dependency>-->
 
         <dependency>
@@ -123,6 +165,17 @@
         </dependency>
 
     </dependencies>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>central-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>central-stage</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
 
 </project>
