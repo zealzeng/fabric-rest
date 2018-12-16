@@ -151,7 +151,6 @@ public class HttpUtils {
 	 * 
 	 * @param urlstr
 	 * @param requestMethod
-	 * @param params 暂时只有 POST时需要写到消息体
 	 * @param contentType
 	 * @param requestCharset
 	 * @param responseCharset 如果返回的content
@@ -169,7 +168,6 @@ public class HttpUtils {
 	 * 
 	 * @param urlstr
 	 * @param requestMethod
-	 * @param params 暂时只有 POST时需要写到消息体
 	 * @param contentType
 	 * @param requestCharset
 	 * @param responseCharset 如果返回的content
