@@ -11,10 +11,6 @@ import java.io.File;
 
 public class RestServiceConfig {
 
-    public static final String FABRIC_REST_CONFIG_FILE = "fabric-rest.properties";
-
-//    public static final String APP_PROFILE_DIR = "app_profile_dir";
-
     public static final String APP_PROFILE_FILE = "app-profile.json";
 
     public static final String APP_SECRET_FILE = "app.secret";
@@ -47,47 +43,5 @@ public class RestServiceConfig {
         this.appProfileDir = appProfileDir;
         return this;
     }
-
-    //    public static final String FBC_CONFIG_ROOT = "fbc_config_root";
-
-
-//    private Properties properties = null;
-
-//    public RestServiceConfig(File configFile) throws IOException {
-//        loadConfigFile(configFile);
-//    }
-//
-//    private void loadConfigFile(File configFile) throws IOException {
-//        Properties properties = new Properties();
-//        try (FileInputStream fis = new FileInputStream(configFile)) {
-//            properties.load(fis);
-//        }
-//
-//    }
-//
-//    /**
-//     * getProperty return back property for the given value.
-//     *
-//     * @param propertyKey
-//     * @return String value for the property
-//     */
-//    public String getProperty(String propertyKey) {
-//        return properties.getProperty(propertyKey);
-//    }
-//
-//    /**
-//     * Get property as file
-//     * @param propertyKey
-//     * @return
-//     */
-//    public File getFileProperty(String propertyKey) {
-//        String str = this.properties.getProperty(propertyKey);
-//        if (str != null && str.length() > 0) {
-//            return new File(str);
-//        }
-//        else {
-//            return null;
-//        }
-//    }
 
 }
