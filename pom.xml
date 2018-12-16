@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.whlylc</groupId>
     <artifactId>fabric-rest</artifactId>
-    <version>0.0.1</version>
+    <version>1.2.0-rc1</version>
     <name>Luoying fabric rest server</name>
     <description>Luoying fabric rest server</description>
 
@@ -131,12 +131,6 @@
             <artifactId>fabric-sdk-java</artifactId>
             <version>1.2.1</version>
         </dependency>
-
-        <!--<dependency>-->
-        <!--<groupId>com.google.protobuf</groupId>-->
-        <!--<artifactId>protobuf-java</artifactId>-->
-        <!--<version>3.5.1</version>-->
-        <!--</dependency>-->
 
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
