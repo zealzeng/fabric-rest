@@ -30,7 +30,6 @@ import javax.net.ssl.X509TrustManager;
 
 /**
  * @author zeal
- * @since 2013-9-25
  */
 public class HttpUtils {
 	

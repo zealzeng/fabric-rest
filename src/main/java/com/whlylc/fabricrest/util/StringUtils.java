@@ -17,7 +17,6 @@ import java.util.regex.Pattern;
 /**
  * String utility functions
  * @author Zeal
- * @date 2015-12-14
  */
 public class StringUtils extends org.apache.commons.lang3.StringUtils {
 	
